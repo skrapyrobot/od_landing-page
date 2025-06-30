@@ -19,6 +19,7 @@ body {
     justify-content: center;
     gap: 3rem;
 }
+.container.footer,
 .container.header {
     background-color: #1f2937;
     color: white;
@@ -27,7 +28,7 @@ body {
     justify-content: end;
 }
 .container.header > *:first-child {
-    color: rebeccapurple;
+    /* color: rebeccapurple; */
     justify-self: flex-start;
     flex: 1;
 }
@@ -42,6 +43,36 @@ body {
     align-items: center;
 }
 
+.container.case-mid.two {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container.case-mid.two > blockquote {
+    font-style: italic;
+    font-weight: 200;
+}
+.container.case-mid.two > p {
+    align-self: flex-end;
+    gap: 3rem;
+}
+
+.container.case-low {
+    color: white;
+    height: 300px;
+    background-color: #3882f6;
+    border: 4rem solid white;
+    border-radius: 10px;
+}
+
+.container.footer {
+    align-items: center;
+    justify-content: center;
+}
+
 .charts {
     display: flex;
     gap: 3rem;
@@ -51,6 +82,9 @@ body {
 .char {
     align-items: center;
     align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 button {
@@ -67,24 +101,29 @@ button {
     text-align: center;
 }
 
-button:hover,
-button:focus {
+button:hover {
     background-color: #f082ac;
+}
+button:focus {
+    background-color: #1f2937;
 }
 
 .box {
     width: 100px;
     height: 100px;
-    background-color: bisque;
-    border: 3px solid blue;
+    border: 3px solid #3882f6;
     border-radius: 10px;
+    margin: 0 0 20px 0;
 }
 
 img {
-    min-width: 300px;
-    min-height: auto;
-    background-color: #f082ac;
+    display: flex;
+    min-width: 400px;
+    height: 150px;
+    background-color: gray;
     border: 1px solid white;
+    justify-items: center;
+    align-items: center;
 }
 
 h1 {
